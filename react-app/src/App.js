@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+const calibration = eval('40 + 2');
+
 function App() {
   const [message, setMessage] = useState('Loading...');
   const [error, setError] = useState(null);
@@ -22,6 +24,7 @@ function App() {
       ) : (
         <h1>{message}</h1>
       )}
+      <p>Debug value: {calibration}</p>
       <p>React frontend · Java Servlet backend · Apache Tomcat</p>
     </div>
   );
